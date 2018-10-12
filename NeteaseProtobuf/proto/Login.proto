@@ -1,0 +1,10 @@
+package com.message;
+message C_Login{
+	required string account=1;//账号
+	required string password=2;//密码
+}
+message S_Login{
+	required string account=1;//账号
+	required bool isSuccessful=2;//登录成功否
+	optional string msg=3;//附加消息
+}

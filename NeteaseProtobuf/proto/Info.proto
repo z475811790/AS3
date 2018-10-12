@@ -1,0 +1,7 @@
+package com.message;
+message C_INFO{
+	required string content=1;//内容
+	}
+message S_INFO {
+	required string content=1;//内容
+	}

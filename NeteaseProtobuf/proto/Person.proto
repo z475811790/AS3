@@ -1,0 +1,10 @@
+package com.message;
+message C_PERSON_INFO{
+	required int32 id=1;
+	required string name=2;
+	}
+message S_PERSON_INFO {
+	required int32 id=1; //
+	required string name=2;//
+	optional int32 age=3;//
+	}

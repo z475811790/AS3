@@ -1,0 +1,16 @@
+package com.message;
+message C_ChatMsg{
+	required string name=1;
+	required string content=2;
+}
+message S_ChatMsg{
+	required string name=1;
+	required string content=2;
+	required string date=3;
+}
+message C_LoginChat{
+	required int32 roomNumber=1;
+}
+message S_LoginChat{
+	required int32 roomNumber=1;	
+}

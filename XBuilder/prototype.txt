@@ -1,0 +1,8 @@
+{classdesc}
+package {packagename}
+{
+	{common}public class {classname} {extends} 
+	{
+{fields}
+	}
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.xyzdl.components.ConsolePanel"/>
+    <classEntry path="com.xyzdl.components.Component"/>
+    <classEntry path="DisplayUtil"/>
+    <classEntry path="com.xyzdl.components.ConsoleInput"/>
+    <classEntry path="Console"/>
+    <classEntry path="com.xyzdl.components.Box"/>
+    <classEntry path="com.xyzdl.components.Image"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

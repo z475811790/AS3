@@ -1,0 +1,18 @@
+package com.message;
+
+message MessageEnum{
+	enum MessageId{
+		//----成对消息区
+		C_Login = 10;//登录请求
+		S_Login = 11;//登录请求返回
+		C_ChatMsg = 100;//聊天消息
+		S_ChatMsg = 101;//聊天消息
+		C_LoginChat = 102;//登录聊天室
+		S_LoginChat = 103;//登录聊天室
+		//----仅服务器发送消息区
+		S_SynHeartbeat = 1001;//服务器发送心跳及同步时间
+		//----仅客户端发送消息区
+		C_Heartbeat = 2000;//客户端发送心跳
+		//----共享消息区
+	}
+}

@@ -1,0 +1,6 @@
+package com.message;
+message S_SynHeartbeat{
+	required int64 serverTime=1;
+}
+message C_Heartbeat{
+}
