@@ -3,6 +3,7 @@ package
 	import xyzdlcore.utils.AssetUtil;
 	import xyzdlcore.utils.CoreUtil;
 
+
 	public class CoreConfig
 	{
 		public static const IS_DEBUG:Boolean = true; //调试模式否

@@ -1,11 +1,12 @@
 package
 {
-	import xyzdlcore.managers.RenderManager;
-	import xyzdlcore.modules.Dispatcher;
 
 	import flash.display.Stage;
 	import flash.system.ApplicationDomain;
 	import flash.system.LoaderContext;
+	
+	import xyzdlcore.managers.RenderManager;
+	import xyzdlcore.modules.Dispatcher;
 
 	/**
 	 * @author xYzDl
