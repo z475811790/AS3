@@ -1,4 +1,4 @@
-package xyzdlcore.modules
+package com.core
 {
 	import xyzdlcore.utils.AnalysisUtil;
 	
@@ -12,7 +12,7 @@ package xyzdlcore.modules
 	 * @date 创建时间：2017-11-30 19:22:55
 	 * @description: 有流量分析功能的Socket的装饰器类
 	 */
-	public class XSocket4FlowAnalysis extends XSocket1
+	public class XSocket4FlowAnalysis extends XSocket
 	{
 		private static const REFRESH_RATE:uint = 1000; //毫秒
 		private static var _lastSecSum:uint = 0;

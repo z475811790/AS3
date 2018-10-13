@@ -1,11 +1,10 @@
 package com.session
 {
 	import xyzdlcore.crypt.AESCrypt;
-	import xyzdlcore.modules.XSocket1;
 	
 	import flash.net.Socket;
 
-	public class XSession extends XSocket1
+	public class XSession extends XSocket
 	{
 		//服务器端的客户端模型增加一些特有属性
 		public var len:uint = 0;

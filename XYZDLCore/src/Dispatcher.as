@@ -1,4 +1,4 @@
-package xyzdlcore.modules
+package 
 {
 	import flash.utils.Dictionary;
 

@@ -1,7 +1,6 @@
 package com.worker
 {
 	import xyzdlcore.event.ModuleMessage;
-	import xyzdlcore.modules.Dispatcher;
 	import xyzdlcore.utils.CoreUtil;
 	
 	import flash.display.Sprite;

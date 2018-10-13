@@ -7,7 +7,6 @@ package
 	import xyzdlcore.crypt.AESCrypt;
 	import xyzdlcore.event.DispatchEvent;
 	import xyzdlcore.event.ModuleMessage;
-	import xyzdlcore.modules.Dispatcher;
 	import xyzdlcore.utils.Hex;
 	
 	import flash.events.Event;

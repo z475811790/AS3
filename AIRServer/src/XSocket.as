@@ -1,4 +1,4 @@
-package xyzdlcore.modules
+package 
 {
 	import xyzdlcore.event.DispatchEvent;
 	import xyzdlcore.event.ModuleMessage;
@@ -7,13 +7,13 @@ package xyzdlcore.modules
 	import flash.system.Security;
 	import flash.utils.ByteArray;
 
-	public class XSocket1
+	public class XSocket
 	{
 		public static const HEAD_LEN:int = 4; //数据包头,用来表示实际数据的长度,数据包去掉包头才是实际数据长度
 
 		private var _socket:Socket;
 
-		public function XSocket1(socket:Socket = null)
+		public function XSocket(socket:Socket = null)
 		{
 			_socket = socket ? socket : new Socket();
 			_socket.timeout = 10000;

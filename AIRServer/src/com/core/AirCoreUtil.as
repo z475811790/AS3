@@ -1,6 +1,5 @@
 package com.core
 {
-	import xyzdlcore.modules.XSocket1;
 
 	import flash.net.Socket;
 	import flash.utils.describeType;
@@ -20,7 +19,7 @@ package com.core
 		/**
 		 * 返回类似 127.0.0.1:8080 的套接字名字
 		 */
-		public static function getSocketIdX(socket:XSocket1):String
+		public static function getSocketIdX(socket:XSocket):String
 		{
 			return socket.remoteAddress + ":" + socket.remotePort;
 		}

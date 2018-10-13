@@ -1,7 +1,6 @@
 package xyzdlcore.loader
 {
 	import xyzdlcore.interfaces.IDispatcher;
-	import xyzdlcore.modules.Dispatcher;
 
 	import flash.events.Event;
 	import flash.events.IOErrorEvent;

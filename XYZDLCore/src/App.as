@@ -6,7 +6,6 @@ package
 	import flash.system.LoaderContext;
 	
 	import xyzdlcore.managers.RenderManager;
-	import xyzdlcore.modules.Dispatcher;
 
 	/**
 	 * @author xYzDl

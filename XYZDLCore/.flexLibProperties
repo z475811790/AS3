@@ -9,12 +9,10 @@
     <classEntry path="xyzdlcore.loader.LoaderBean"/>
     <classEntry path="xyzdlcore.crypt.AESCrypt"/>
     <classEntry path="xyzdlcore.utils.AnalysisUtil"/>
-    <classEntry path="xyzdlcore.modules.XSocket1"/>
-    <classEntry path="xyzdlcore.modules.XSocket4FlowAnalysis"/>
     <classEntry path="xyzdlcore.managers.RenderManager"/>
     <classEntry path="App"/>
     <classEntry path="xyzdlcore.utils.TimeUtil"/>
-    <classEntry path="xyzdlcore.modules.Dispatcher"/>
+    <classEntry path="Dispatcher"/>
     <classEntry path="xyzdlcore.event.AddModuleListener"/>
     <classEntry path="xyzdlcore.event.RemoveModuleListener"/>
     <classEntry path="xyzdlcore.event.DispatchEvent"/>
