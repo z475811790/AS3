@@ -8,9 +8,9 @@ package test
 	import com.hurlant.crypto.tests.RSAKeyTest;
 	import com.hurlant.math.BigInteger;
 	import com.hurlant.util.Hex;
-	import com.xyzdl.core.crypt.AESCrypt;
-	import com.xyzdl.core.utils.XStringUtil;
-	import com.xyzdl.core.utils.XTimer;
+	import xyzdlcore.crypt.AESCrypt;
+	import xyzdlcore.utils.XStringUtil;
+	import xyzdlcore.utils.XTimer;
 	
 	import flash.events.TimerEvent;
 	import flash.utils.ByteArray;

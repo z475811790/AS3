@@ -9,10 +9,10 @@ package com.worker
 	import com.po.User;
 	import com.service.ServiceContext;
 	import com.service.SocketUserMap;
-	import com.xyzdl.core.event.ModuleMessage;
-	import com.xyzdl.core.loader.LoaderBean;
-	import com.xyzdl.core.utils.AssetUtil;
-	import com.xyzdl.core.utils.CoreUtil;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.loader.LoaderBean;
+	import xyzdlcore.utils.AssetUtil;
+	import xyzdlcore.utils.CoreUtil;
 
 	import flash.system.MessageChannel;
 	import flash.system.Worker;

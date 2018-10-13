@@ -1,8 +1,8 @@
 package com.dao
 {
-	import com.xyzdl.aircore.PropertyInfo;
-	import com.xyzdl.core.utils.CoreUtil;
-	import com.xyzdl.core.utils.XStringUtil;
+	import com.core.PropertyInfo;
+	import xyzdlcore.utils.CoreUtil;
+	import xyzdlcore.utils.XStringUtil;
 	
 	import flash.data.SQLConnection;
 	import flash.data.SQLResult;

@@ -1,6 +1,6 @@
 package com.command
 {
-	import com.xyzdl.core.interfaces.ICommand;
+	import xyzdlcore.interfaces.ICommand;
 
 	import flash.utils.ByteArray;
 

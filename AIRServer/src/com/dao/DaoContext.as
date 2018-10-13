@@ -4,7 +4,7 @@ package com.dao
 	import com.hurlant.util.Base64;
 	import com.po.ChatInfo;
 	import com.po.User;
-	import com.xyzdl.aircore.AirCoreUtil;
+	import com.core.AirCoreUtil;
 	
 	import flash.data.SQLConnection;
 	import flash.events.Event;

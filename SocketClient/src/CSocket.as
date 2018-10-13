@@ -4,12 +4,11 @@ package
 	import com.hurlant.math.BigInteger;
 	import com.message.MessageEnum.MessageId;
 	import com.netease.protobuf.Message;
-	import com.xyzdl.core.crypt.AESCrypt;
-	import com.xyzdl.core.event.DispatchEvent;
-	import com.xyzdl.core.event.ModuleMessage;
-	import com.xyzdl.core.modules.Dispatcher;
-	import com.xyzdl.core.modules.XSocket;
-	import com.xyzdl.core.utils.Hex;
+	import xyzdlcore.crypt.AESCrypt;
+	import xyzdlcore.event.DispatchEvent;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.modules.Dispatcher;
+	import xyzdlcore.utils.Hex;
 	
 	import flash.events.Event;
 	import flash.events.IOErrorEvent;

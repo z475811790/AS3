@@ -2,10 +2,10 @@ package com.worker
 {
 	import com.hurlant.crypto.rsa.RSAKey;
 	import com.hurlant.math.BigInteger;
-	import com.xyzdl.core.crypt.AESCrypt;
-	import com.xyzdl.core.event.ModuleMessage;
-	import com.xyzdl.core.utils.CoreUtil;
-	import com.xyzdl.core.utils.Hex;
+	import xyzdlcore.crypt.AESCrypt;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.utils.CoreUtil;
+	import xyzdlcore.utils.Hex;
 	
 	import flash.events.Event;
 	import flash.system.MessageChannel;

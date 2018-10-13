@@ -1,7 +1,7 @@
 package com.xyzdl.components
 {
-	import com.xyzdl.core.loader.ImageLoaderBean;
-	import com.xyzdl.core.utils.CoreUtil;
+	import xyzdlcore.loader.ImageLoaderBean;
+	import xyzdlcore.utils.CoreUtil;
 
 	import flash.display.Bitmap;
 	import flash.display.BitmapData;

@@ -1,8 +1,8 @@
 package
 {
-	import com.xyzdl.core.constants.CommonConstant;
-	import com.xyzdl.core.utils.AssetUtil;
-	import com.xyzdl.core.utils.CoreUtil;
+	import xyzdlcore.constants.CommonConstant;
+	import xyzdlcore.utils.AssetUtil;
+	import xyzdlcore.utils.CoreUtil;
 
 	import flash.utils.Dictionary;
 

@@ -1,7 +1,8 @@
 package com.session
 {
-	import com.xyzdl.aircore.AirCoreUtil;
 
+	import com.core.AirCoreUtil;
+	
 	import flash.net.Socket;
 	import flash.utils.Dictionary;
 

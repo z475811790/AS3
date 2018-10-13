@@ -1,7 +1,7 @@
 package
 {
-	import com.xyzdl.core.utils.AssetUtil;
-	import com.xyzdl.core.utils.CoreUtil;
+	import xyzdlcore.utils.AssetUtil;
+	import xyzdlcore.utils.CoreUtil;
 
 	public class Config
 	{

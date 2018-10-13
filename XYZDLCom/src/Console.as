@@ -3,8 +3,8 @@ package
 	import com.xyzdl.components.Box;
 	import com.xyzdl.components.ConsoleInput;
 	import com.xyzdl.components.ConsolePanel;
-	import com.xyzdl.core.event.AddModuleListener;
-	import com.xyzdl.core.event.ModuleMessage;
+	import xyzdlcore.event.AddModuleListener;
+	import xyzdlcore.event.ModuleMessage;
 	
 	import flash.events.FocusEvent;
 	import flash.events.KeyboardEvent;

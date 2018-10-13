@@ -5,9 +5,9 @@ package com.module.main
 	import com.message.S_SynHeartbeat;
 	import com.message.MessageEnum.MessageId;
 	import com.module.BaseController;
-	import com.xyzdl.core.event.AddModuleListener;
-	import com.xyzdl.core.event.ModuleMessage;
-	import com.xyzdl.core.utils.XTimer;
+	import xyzdlcore.event.AddModuleListener;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.utils.XTimer;
 	
 	import flash.utils.ByteArray;
 

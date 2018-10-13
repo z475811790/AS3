@@ -1,8 +1,8 @@
 package com.po
 {
 	import com.dao.DaoContext;
-	import com.xyzdl.aircore.PropertyInfo;
-	import com.xyzdl.core.utils.XStringUtil;
+	import com.core.PropertyInfo;
+	import xyzdlcore.utils.XStringUtil;
 
 	import flash.utils.getQualifiedClassName;
 

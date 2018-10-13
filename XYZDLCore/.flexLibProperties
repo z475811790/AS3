@@ -1,37 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
-    <classEntry path="com.xyzdl.aircore.Log"/>
     <classEntry path="CoreConfig"/>
-    <classEntry path="com.xyzdl.aircore.AirFileLoader"/>
-    <classEntry path="com.xyzdl.core.utils.CoreUtil"/>
-    <classEntry path="com.xyzdl.core.Pool"/>
-    <classEntry path="com.xyzdl.core.loader.LoaderCore"/>
-    <classEntry path="com.xyzdl.aircore.AirCoreUtil"/>
-    <classEntry path="com.xyzdl.core.loader.LoaderModel"/>
-    <classEntry path="com.xyzdl.core.loader.LoaderBean"/>
-    <classEntry path="com.xyzdl.core.crypt.AESCrypt"/>
-    <classEntry path="com.xyzdl.core.utils.AnalysisUtil"/>
-    <classEntry path="com.xyzdl.core.modules.XSocket"/>
-    <classEntry path="com.xyzdl.core.modules.XSocket4FlowAnalysis"/>
-    <classEntry path="com.xyzdl.core.managers.RenderManager"/>
+    <classEntry path="xyzdlcore.utils.CoreUtil"/>
+    <classEntry path="xyzdlcore.Pool"/>
+    <classEntry path="xyzdlcore.loader.LoaderCore"/>
+    <classEntry path="xyzdlcore.loader.LoaderModel"/>
+    <classEntry path="xyzdlcore.loader.LoaderBean"/>
+    <classEntry path="xyzdlcore.crypt.AESCrypt"/>
+    <classEntry path="xyzdlcore.utils.AnalysisUtil"/>
+    <classEntry path="xyzdlcore.modules.XSocket1"/>
+    <classEntry path="xyzdlcore.modules.XSocket4FlowAnalysis"/>
+    <classEntry path="xyzdlcore.managers.RenderManager"/>
     <classEntry path="App"/>
-    <classEntry path="com.xyzdl.core.utils.TimeUtil"/>
-    <classEntry path="com.xyzdl.core.modules.Dispatcher"/>
-    <classEntry path="com.xyzdl.core.event.AddModuleListener"/>
-    <classEntry path="com.xyzdl.core.event.RemoveModuleListener"/>
-    <classEntry path="com.xyzdl.core.event.DispatchEvent"/>
-    <classEntry path="com.xyzdl.core.interfaces.IDispatcher"/>
-    <classEntry path="com.xyzdl.core.event.ModuleMessage"/>
-    <classEntry path="com.xyzdl.core.utils.Hex"/>
-    <classEntry path="com.xyzdl.aircore.PropertyInfo"/>
-    <classEntry path="com.xyzdl.core.utils.XStringUtil"/>
-    <classEntry path="com.xyzdl.core.loader.ImageLoaderBean"/>
-    <classEntry path="com.xyzdl.core.utils.XTimer"/>
-    <classEntry path="com.xyzdl.core.utils.AssetUtil"/>
-    <classEntry path="com.xyzdl.core.constants.CommonConstant"/>
-    <classEntry path="com.xyzdl.core.utils.SharedObjectUtil"/>
-    <classEntry path="com.xyzdl.core.interfaces.ICommand"/>
+    <classEntry path="xyzdlcore.utils.TimeUtil"/>
+    <classEntry path="xyzdlcore.modules.Dispatcher"/>
+    <classEntry path="xyzdlcore.event.AddModuleListener"/>
+    <classEntry path="xyzdlcore.event.RemoveModuleListener"/>
+    <classEntry path="xyzdlcore.event.DispatchEvent"/>
+    <classEntry path="xyzdlcore.interfaces.IDispatcher"/>
+    <classEntry path="xyzdlcore.event.ModuleMessage"/>
+    <classEntry path="xyzdlcore.utils.Hex"/>
+    <classEntry path="xyzdlcore.utils.XStringUtil"/>
+    <classEntry path="xyzdlcore.loader.ImageLoaderBean"/>
+    <classEntry path="xyzdlcore.utils.XTimer"/>
+    <classEntry path="xyzdlcore.utils.AssetUtil"/>
+    <classEntry path="xyzdlcore.constants.CommonConstant"/>
+    <classEntry path="xyzdlcore.utils.SharedObjectUtil"/>
+    <classEntry path="xyzdlcore.interfaces.ICommand"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

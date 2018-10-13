@@ -9,7 +9,7 @@ package com.module.chat
 	import com.message.MessageEnum.MessageId;
 	import com.module.BaseController;
 	import com.netease.protobuf.Message;
-	import com.xyzdl.core.utils.TimeUtil;
+	import xyzdlcore.utils.TimeUtil;
 	
 	import flash.events.KeyboardEvent;
 	import flash.ui.Keyboard;

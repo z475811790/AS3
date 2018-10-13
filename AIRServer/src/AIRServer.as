@@ -2,13 +2,13 @@ package
 {
 	import com.core.Keyboard;
 	import com.worker.CryptWorker;
-	import com.xyzdl.aircore.Log;
+	import com.core.Log;
 	import com.xyzdl.components.Image;
-	import com.xyzdl.core.event.AddModuleListener;
-	import com.xyzdl.core.event.DispatchEvent;
-	import com.xyzdl.core.event.ModuleMessage;
-	import com.xyzdl.core.loader.LoaderBean;
-	import com.xyzdl.core.utils.AssetUtil;
+	import xyzdlcore.event.AddModuleListener;
+	import xyzdlcore.event.DispatchEvent;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.loader.LoaderBean;
+	import xyzdlcore.utils.AssetUtil;
 
 	import flash.display.Sprite;
 	import flash.display.StageAlign;

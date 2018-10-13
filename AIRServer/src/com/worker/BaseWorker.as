@@ -1,8 +1,8 @@
 package com.worker
 {
-	import com.xyzdl.core.event.ModuleMessage;
-	import com.xyzdl.core.modules.Dispatcher;
-	import com.xyzdl.core.utils.CoreUtil;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.modules.Dispatcher;
+	import xyzdlcore.utils.CoreUtil;
 	
 	import flash.display.Sprite;
 	import flash.events.Event;

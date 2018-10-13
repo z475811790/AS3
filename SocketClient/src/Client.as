@@ -3,11 +3,11 @@ package
 	import com.core.Keyboard;
 	import com.module.ControllerRegister;
 	import com.xyzdl.components.Image;
-	import com.xyzdl.core.constants.CommonConstant;
-	import com.xyzdl.core.event.DispatchEvent;
-	import com.xyzdl.core.event.ModuleMessage;
-	import com.xyzdl.core.loader.LoaderBean;
-	import com.xyzdl.core.utils.AssetUtil;
+	import xyzdlcore.constants.CommonConstant;
+	import xyzdlcore.event.DispatchEvent;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.loader.LoaderBean;
+	import xyzdlcore.utils.AssetUtil;
 
 	import flash.display.Sprite;
 	import flash.display.StageAlign;

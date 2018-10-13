@@ -32,8 +32,8 @@
       </libraryPathEntry>
       <libraryPathEntry kind="3" linkType="1" path="/XYZDLCom/bin/XYZDLCom.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/XYZDLCore/bin/XYZDLCore.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="G:/DevCodes/AS3/AIRServer/ExternalLib/as3crypto.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="G:/DevCodes/AS3/AIRServer/ExternalLib/protobuf.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/ExternalLib/as3crypto.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/ExternalLib/protobuf.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -51,7 +51,7 @@
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
   <buildTargets>
     <buildTarget buildTargetName="default" platformId="default">
-      <airSettings airCertificatePath="D:/sampleCert.pfx" airTimestamp="false" anePathSet="true" version="1">
+      <airSettings airCertificatePath="F:/AS3/Tools/sampleCert.pfx" airTimestamp="false" anePathSet="true" version="1">
         <airExcludes>
           <pathEntry path="initializer.as.inc"/>
         </airExcludes>

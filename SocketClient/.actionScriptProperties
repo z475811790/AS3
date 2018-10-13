@@ -30,7 +30,7 @@
       </libraryPathEntry>
       <libraryPathEntry kind="3" linkType="1" path="/XYZDLCore/bin/XYZDLCore.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/XYZDLCom/bin/XYZDLCom.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="G:/DevCodes/AS3/AIRServer/ExternalLib/protobuf.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/ExternalLib/protobuf.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>

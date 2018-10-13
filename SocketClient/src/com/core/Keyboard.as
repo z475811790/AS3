@@ -1,6 +1,6 @@
 package com.core
 {
-	import com.xyzdl.core.utils.SharedObjectUtil;
+	import xyzdlcore.utils.SharedObjectUtil;
 	
 	import flash.display.Stage;
 	import flash.events.KeyboardEvent;

@@ -3,13 +3,13 @@ package
 	import com.session.SessionContext;
 	import com.session.XSession;
 	import com.worker.CryptWorker;
-	import com.xyzdl.aircore.AirCoreUtil;
-	import com.xyzdl.core.crypt.AESCrypt;
-	import com.xyzdl.core.event.AddModuleListener;
-	import com.xyzdl.core.event.DispatchEvent;
-	import com.xyzdl.core.event.ModuleMessage;
-	import com.xyzdl.core.utils.CoreUtil;
-	import com.xyzdl.core.utils.Hex;
+	import com.core.AirCoreUtil;
+	import xyzdlcore.crypt.AESCrypt;
+	import xyzdlcore.event.AddModuleListener;
+	import xyzdlcore.event.DispatchEvent;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.utils.CoreUtil;
+	import xyzdlcore.utils.Hex;
 
 	import flash.events.Event;
 	import flash.events.ProgressEvent;

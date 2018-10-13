@@ -8,7 +8,7 @@ package com.command
 	import com.service.ServiceContext;
 	import com.service.SocketUserMap;
 	import com.worker.DispatchWorker;
-	import com.xyzdl.core.event.ModuleMessage;
+	import xyzdlcore.event.ModuleMessage;
 
 	import flash.utils.ByteArray;
 	import flash.utils.Dictionary;

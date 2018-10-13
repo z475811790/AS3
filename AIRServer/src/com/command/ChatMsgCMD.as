@@ -6,7 +6,7 @@ package com.command
 	import com.service.ServiceContext;
 	import com.service.SocketUserMap;
 	import com.worker.DispatchWorker;
-	import com.xyzdl.core.utils.TimeUtil;
+	import xyzdlcore.utils.TimeUtil;
 
 	import flash.utils.ByteArray;
 	import flash.utils.Dictionary;

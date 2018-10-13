@@ -11,7 +11,7 @@ package com.hurlant.crypto.tests
 	import com.hurlant.crypto.rsa.RSAKey;
 	import com.hurlant.util.Hex;
 	import com.hurlant.util.der.PEM;
-	import com.xyzdl.core.loader.LoaderCore;
+	import xyzdlcore.loader.LoaderCore;
 	
 	import flash.utils.ByteArray;
 	

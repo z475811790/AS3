@@ -3,8 +3,8 @@ package
 	import com.conf.ChatInfo;
 	import com.conf.Item;
 	import com.conf.User;
-	import com.xyzdl.core.utils.AssetUtil;
-	import com.xyzdl.core.utils.CoreUtil;
+	import xyzdlcore.utils.AssetUtil;
+	import xyzdlcore.utils.CoreUtil;
 
 	import flash.net.getClassByAlias;
 	import flash.net.registerClassAlias;

@@ -1,6 +1,6 @@
 package com.xyzdl.components
 {
-	import com.xyzdl.core.Pool;
+	import xyzdlcore.Pool;
 
 	import flash.text.TextField;
 	import flash.text.TextFormat;

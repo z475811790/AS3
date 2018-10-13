@@ -1,7 +1,7 @@
 package
 {
-	import com.xyzdl.core.managers.RenderManager;
-	import com.xyzdl.core.modules.Dispatcher;
+	import xyzdlcore.managers.RenderManager;
+	import xyzdlcore.modules.Dispatcher;
 
 	import flash.display.Stage;
 	import flash.system.ApplicationDomain;
