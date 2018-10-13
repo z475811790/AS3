@@ -4,20 +4,22 @@ package
 	import com.hurlant.math.BigInteger;
 	import com.message.MessageEnum.MessageId;
 	import com.netease.protobuf.Message;
-	import xyzdlcore.crypt.AESCrypt;
-	import xyzdlcore.event.DispatchEvent;
-	import xyzdlcore.event.ModuleMessage;
-	import xyzdlcore.utils.Hex;
 	
 	import flash.events.Event;
 	import flash.events.IOErrorEvent;
 	import flash.events.ProgressEvent;
 	import flash.events.SecurityErrorEvent;
+	import flash.net.Socket;
 	import flash.utils.ByteArray;
 	import flash.utils.Dictionary;
 	import flash.utils.clearTimeout;
 	import flash.utils.getQualifiedClassName;
 	import flash.utils.setTimeout;
+	
+	import xyzdlcore.crypt.AESCrypt;
+	import xyzdlcore.event.DispatchEvent;
+	import xyzdlcore.event.ModuleMessage;
+	import xyzdlcore.utils.Hex;
 
 	public class CSocket
 	{
@@ -27,7 +29,8 @@ package
 		private static const NORMAL:int = 4; //正常通信状态
 
 
-		private var _xSocket:XSocket = new XSocket(); //XSocket4FlowAnalysis; //套接字实例
+//		private var _xSocket:XSocket = new XSocket(); //XSocket4FlowAnalysis; //套接字实例
+		private var _socket:Socket;
 		private var _currState:int = DETERMINE_VERSION; //初始状态
 		private var _aesKey:AESCrypt = new AESCrypt(); //AES加密对象
 		private var _rsaKey:RSAKey; //RSA加密对象
@@ -43,6 +46,8 @@ package
 
 		public function CSocket()
 		{
+			_socket = new Socket();
+			_socket.timeout = 10000;
 			var bign:BigInteger = new BigInteger("d65e6d75aeda689cfab5efa15e134a7fa416765c568940ec93ab51c88be3581561ed258824fb1f366324cb6b412416452972f23737a816933fd3f156c00a0d9d",16);
 			var bigd:BigInteger = new BigInteger("b38a28b11cbe2e49f3acf74336907f9fc1e5524269f3d09d93dc33c5fc6b6f7407b141a12d1c2c6169d1fcb090a63072ad742d6eba45b326dffdd32b6e361281",16);
 			var e:int = 65537;
