@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
+    <classEntry path="App"/>
     <classEntry path="CoreConfig"/>
-    <classEntry path="xyzdlcore.utils.CoreUtil"/>
+    <classEntry path="Dispatcher"/>
     <classEntry path="xyzdlcore.Pool"/>
+    <classEntry path="xyzdlcore.constants.CommonConstant"/>
+    <classEntry path="xyzdlcore.crypt.AESCrypt"/>
+    <classEntry path="xyzdlcore.event.AddModuleListener"/>
+    <classEntry path="xyzdlcore.event.DispatchEvent"/>
+    <classEntry path="xyzdlcore.event.ModuleMessage"/>
+    <classEntry path="xyzdlcore.event.RemoveModuleListener"/>
+    <classEntry path="xyzdlcore.interfaces.ICommand"/>
+    <classEntry path="xyzdlcore.interfaces.IDispatcher"/>
+    <classEntry path="xyzdlcore.loader.ImageLoaderBean"/>
+    <classEntry path="xyzdlcore.loader.LoaderBean"/>
     <classEntry path="xyzdlcore.loader.LoaderCore"/>
     <classEntry path="xyzdlcore.loader.LoaderModel"/>
-    <classEntry path="xyzdlcore.loader.LoaderBean"/>
-    <classEntry path="xyzdlcore.crypt.AESCrypt"/>
-    <classEntry path="xyzdlcore.utils.AnalysisUtil"/>
     <classEntry path="xyzdlcore.managers.RenderManager"/>
-    <classEntry path="App"/>
-    <classEntry path="xyzdlcore.utils.TimeUtil"/>
-    <classEntry path="Dispatcher"/>
-    <classEntry path="xyzdlcore.event.AddModuleListener"/>
-    <classEntry path="xyzdlcore.event.RemoveModuleListener"/>
-    <classEntry path="xyzdlcore.event.DispatchEvent"/>
-    <classEntry path="xyzdlcore.interfaces.IDispatcher"/>
-    <classEntry path="xyzdlcore.event.ModuleMessage"/>
-    <classEntry path="xyzdlcore.utils.Hex"/>
-    <classEntry path="xyzdlcore.utils.XStringUtil"/>
-    <classEntry path="xyzdlcore.loader.ImageLoaderBean"/>
-    <classEntry path="xyzdlcore.utils.XTimer"/>
+    <classEntry path="xyzdlcore.utils.AnalysisUtil"/>
     <classEntry path="xyzdlcore.utils.AssetUtil"/>
-    <classEntry path="xyzdlcore.constants.CommonConstant"/>
+    <classEntry path="xyzdlcore.utils.CoreUtil"/>
+    <classEntry path="xyzdlcore.utils.Hex"/>
     <classEntry path="xyzdlcore.utils.SharedObjectUtil"/>
-    <classEntry path="xyzdlcore.interfaces.ICommand"/>
+    <classEntry path="xyzdlcore.utils.TimeUtil"/>
+    <classEntry path="xyzdlcore.utils.XStringUtil"/>
+    <classEntry path="xyzdlcore.utils.XTimer"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>

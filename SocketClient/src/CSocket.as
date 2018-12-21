@@ -64,11 +64,11 @@ package
 			_stateFunDic[RECEIVE_SEC_KEY] = receiveSecretKey;
 			_stateFunDic[NORMAL] = read;
 
-			_xSocket.addEventListener(Event.CONNECT, onConnect);
-			_xSocket.addEventListener(ProgressEvent.SOCKET_DATA, onServerSocketData);
-			_xSocket.addEventListener(Event.CLOSE, onSocketClose);
-			_xSocket.addEventListener(SecurityErrorEvent.SECURITY_ERROR, onSecurityError);
-			_xSocket.addEventListener(IOErrorEvent.IO_ERROR, onIOError);
+			_socket.addEventListener(Event.CONNECT, onConnect);
+			_socket.addEventListener(ProgressEvent.SOCKET_DATA, onServerSocketData);
+			_socket.addEventListener(Event.CLOSE, onSocketClose);
+			_socket.addEventListener(SecurityErrorEvent.SECURITY_ERROR, onSecurityError);
+			_socket.addEventListener(IOErrorEvent.IO_ERROR, onIOError);
 		}
 //------START-事件注册区
 		private function onConnect(e:Event):void
@@ -129,20 +129,22 @@ package
 			if(CoreConfig.dataCompress)
 				msg.compress();
 			_aesKey.encryptBytes(msg);
-			_xSocket.sendDP(msg);
+			sendDP(msg);
 		}
+		
+		
 		private var timeoutId:int = 0;
 		public function connectToServer():void
 		{
 			if(Config.autoTimeoutReconnect)
 				timeoutId = setTimeout(connectToServer, 5000);
 			Console.addMsg("Start to Connect...");
-			_xSocket.connect(Config.host, Config.port);
+			_socket.connect(Config.host, Config.port);
 		}
 		public function disconnect():void
 		{
 			Console.addMsg("Disconnected");
-			_xSocket.close();
+			_socket.close();
 		}
 		public function addSocketEventListener(eventType:int, listener:Function):void
 		{
@@ -156,38 +158,38 @@ package
 //------START-私有方法区
 		private function receiveVersion():void
 		{
-			if(_xSocket.bytesAvailable < 4)
+			if(_socket.bytesAvailable < 4)
 				return;
-			var ver:uint = _xSocket.readUnsignedInt();
+			var ver:uint = _socket.readUnsignedInt();
 			Console.addMsg("Server Communication Protocol Version is " + ver);
 			if(Config.COMMUNICATION_PROTOCOL_VERSION > ver)
 			{
 				Console.addMsg("Client Communication Protocol Version is Newer than Server's!");
 			}
-			_xSocket.writeUnsignedInt(Config.COMMUNICATION_PROTOCOL_VERSION);
-			_xSocket.flush();
+			_socket.writeUnsignedInt(Config.COMMUNICATION_PROTOCOL_VERSION);
+			_socket.flush();
 
 			_currState = RECEIVE_CHALLENGE;
 		}
 		private function receiveChallenge():void
 		{
-			if(_xSocket.bytesAvailable < 4)
+			if(_socket.bytesAvailable < 4)
 				return;
-			var challenge:uint = _xSocket.readUnsignedInt();
+			var challenge:uint = _socket.readUnsignedInt();
 			var cAndn:ByteArray = new ByteArray();
 			var n:ByteArray = _rsaKey.n.toByteArray();
 			Console.addMsg("Server Challenge is " + challenge);
 			Console.addMsg("c-n:" + _rsaKey.n);
 			cAndn.writeUnsignedInt(challenge * 2); //验证算法,后期可以修改为复杂一些的
 			cAndn.writeBytes(n);
-			_xSocket.sendDP(cAndn);
+			sendDP(cAndn);
 
 			_currState = RECEIVE_SEC_KEY;
 		}
 		private var buffer:ByteArray;
 		private function receiveSecretKey():void
 		{
-			buffer = _xSocket.readDP();
+			buffer = readDP();
 			if(!buffer || !buffer.length)
 				return;
 			var aesKeyBytes:ByteArray = new ByteArray();
@@ -205,7 +207,7 @@ package
 		private var msgBuffer:ByteArray = new ByteArray;
 		private function read():void
 		{
-			buffer = _xSocket.readDP();
+			buffer = readDP();
 			if(!buffer || !buffer.length)
 				return;
 			buffer.position = 0;
@@ -221,6 +223,60 @@ package
 //			trace("msgId:"+msgId);
 			_dispatcher.dispatch(msgId, [msgBuffer]);
 		}
+		
+		
+		private var bytesLen:uint = 0;
+		private var bytes:ByteArray = new ByteArray();
+		private function readDP():ByteArray
+		{
+			if (bytesLen == 0) {
+				if (_socket.bytesAvailable < 4)
+					return null;
+				else
+					bytesLen = _socket.readUnsignedInt();	
+				if (bytesLen < 0) {
+					throw new Error("Fatal Error:Data Length Must >= 0!");
+				}
+				if (bytesLen == 0) {
+					DispatchEvent(ModuleMessage.SOCKET_DATA_PACKAGE_EMPTY);
+					return null;
+				}
+			}
+			
+			if(_socket.bytesAvailable < bytesLen)
+			{
+				DispatchEvent(ModuleMessage.SOCKET_DATA_PACKAGE_NOT_ENOUGH);
+				return null;
+			}
+			bytes.clear();
+			_socket.readBytes(bytes, 0, bytesLen);
+			bytesLen = 0;
+			return bytes;
+		}
+		
+		private function sendDP(bytes:ByteArray):void
+		{
+			if(!bytes)
+				return;
+			try
+			{
+				if(_socket != null && _socket.connected)
+				{
+					_socket.writeUnsignedInt(bytes.length);
+					_socket.writeBytes(bytes, 0, bytes.length);
+					_socket.flush();
+				}
+				else
+				{
+					trace("Socket is Disconnected");
+				}
+			}
+			catch(error:Error)
+			{
+				trace(error.message);
+			}
+		}
+		
 //------END---私有方法区
 	}
 }

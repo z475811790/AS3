@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<actionScriptProperties analytics="false" mainApplicationPath="AIRServer.as" projectUUID="c7c9f142-f1ec-4c21-8b06-9442dbe27a5c" version="11">
+<actionScriptProperties analytics="false" mainApplicationPath="AIRServer.as" projectUUID="d63b41e5-6694-4203-95c7-4dc173c2d147" version="11">
   <compiler additionalCompilerArguments="-locale en_US" advancedTelemetry="false" autoRSLOrdering="true" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="false" htmlExpressInstall="true" htmlGenerate="false" htmlHistoryManagement="false" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="true" useDebugRSLSwfs="true" useFlashSDK="true" verifyDigests="true" warn="true">
     <compilerSourcePath/>
     <libraryPath defaultLinkType="0">
@@ -30,10 +30,9 @@
           <libraryPathEntry kind="3" linkType="1" path="${PROJECT_FRAMEWORKS}/libs/automation_agent.swc" useDefaultLinkType="false"/>
         </excludedEntries>
       </libraryPathEntry>
-      <libraryPathEntry kind="3" linkType="1" path="/XYZDLCom/bin/XYZDLCom.swc" useDefaultLinkType="false"/>
       <libraryPathEntry kind="3" linkType="1" path="/XYZDLCore/bin/XYZDLCore.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/ExternalLib/as3crypto.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="3" linkType="1" path="${DOCUMENTS}/ExternalLib/protobuf.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="/XYZDLCom/bin/XYZDLCom.swc" useDefaultLinkType="false"/>
+      <libraryPathEntry kind="3" linkType="1" path="D:/GitHub/AS3/ExternalLib/as3crypto.swc" useDefaultLinkType="false"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -43,18 +42,13 @@
     </application>
   </applications>
   <modules/>
-  <workers managerFilePath="src/Workers.as">
-    <worker embed="true" path="src/com/worker/DispatchWorker.as"/>
-    <worker embed="true" path="src/com/worker/CryptWorker.as"/>
-  </workers>
+  <workers/>
   <buildCSSFiles/>
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
   <buildTargets>
     <buildTarget buildTargetName="default" platformId="default">
-      <airSettings airCertificatePath="F:/AS3/Tools/sampleCert.pfx" airTimestamp="false" anePathSet="true" version="1">
-        <airExcludes>
-          <pathEntry path="initializer.as.inc"/>
-        </airExcludes>
+      <airSettings airCertificatePath="D:/GitHub/AS3/Tools/sampleCert.pfx" airTimestamp="true" anePathSet="true" version="1">
+        <airExcludes/>
         <anePaths/>
         <newLaunchParams/>
         <modifiedLaunchParams/>
