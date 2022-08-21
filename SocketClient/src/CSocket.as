@@ -29,7 +29,6 @@ package
 		private static const NORMAL:int = 4; //正常通信状态
 
 
-//		private var _xSocket:XSocket = new XSocket(); //XSocket4FlowAnalysis; //套接字实例
 		private var _socket:Socket;
 		private var _currState:int = DETERMINE_VERSION; //初始状态
 		private var _aesKey:AESCrypt = new AESCrypt(); //AES加密对象
@@ -146,13 +145,13 @@ package
 			Console.addMsg("Disconnected");
 			_socket.close();
 		}
-		public function addSocketEventListener(eventType:int, listener:Function):void
+		public function addSocketMsgListener(msgId:int, listener:Function):void
 		{
-			_dispatcher.add(eventType + "", listener);
+			_dispatcher.add(msgId + "", listener);
 		}
-		public function removeSocketEventListener(eventType:int, listener:Function):void
+		public function removeSocketMsgListener(msgId:int, listener:Function):void
 		{
-			_dispatcher.remove(eventType + "", listener);
+			_dispatcher.remove(msgId + "", listener);
 		}
 //------END---公共方法区
 //------START-私有方法区

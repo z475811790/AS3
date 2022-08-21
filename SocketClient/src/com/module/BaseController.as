@@ -21,13 +21,13 @@ package com.module
 		{
 			CSocket.singleton.sendProtoMessage(msg);
 		}
-		protected function addSocketListener(eventType:int, listener:Function):void
+		protected function addSocketListener(msgId:int, listener:Function):void
 		{
-			CSocket.singleton.addSocketEventListener(eventType, listener);
+			CSocket.singleton.addSocketMsgListener(msgId, listener);
 		}
-		protected function removeSocketListener(eventType:int, listener:Function):void
+		protected function removeSocketListener(msgId:int, listener:Function):void
 		{
-			CSocket.singleton.removeSocketEventListener(eventType, listener);
+			CSocket.singleton.removeSocketMsgListener(msgId, listener);
 		}
 	}
 }
